@@ -11,7 +11,7 @@ on t1.seller_id = t2.seller_id
 left join tb_products as t3
 on t1.product_id = t3.product_id
 
-left join (
+inner join (
         select   t2.product_category_name
                 , 1 as flag_categoria
         from tb_order_items as t1
